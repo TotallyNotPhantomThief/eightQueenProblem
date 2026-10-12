@@ -1,16 +1,14 @@
 def board_display(genotype):
- row = 0
- column = 0 
  for gens in genotype:
-  while column < 8:
-   while row < 8:
-    if(gens == row ):
-     print("Q")
-    else:
-     print(".") 
-    row += 1
-   column += 1  
-pass     
+  for row in range(1,9):
+   if(row == gens):
+    print("Q", end=" ")
+   else:
+    print (".", end=" ") 
+  print()
+
+
+pass  
 
 
 
